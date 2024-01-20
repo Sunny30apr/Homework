@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int n=4;
+    for(int i=1; i<=n; i++) {
+
+        int a=1;
+        char b='A';
+
+        for(int j=1; j<=2*n-1; j++) {
+            
+            if(j <= n-i) {
+                cout << " ";
+            }
+
+            else if(j <= n) {
+                cout << a;
+                a++;
+            }
+
+            else if(j <= n+i-1) {
+                cout << b;
+                b++;
+            }
+
+        }
+        cout << endl;
+    }
+
+return 0;
+}
